@@ -1,0 +1,31 @@
+/*Inicio Search advanced*/
+.advanced{
+	background-color: white;
+	.btn-filtros{
+		background-color:white;
+		color:black;
+		border: 0.5px solid black;
+	}
+	.btn-filtros:hover{
+		background-color: #ff5a5f;
+		border: 0.5px solid white;
+		color:white;
+	}
+	.advan-one{
+		margin-top: 5rem;
+	}
+	.text-14{
+		font-size: 14px;
+		text-align: right;
+	}
+	.btn-aplicar{
+		background-color: #ff5a5f;
+		width: 15rem;
+	}
+	.btn-aplicar:hover{
+		background-color: #f79295;
+	}
+	.icons-arrow{
+		font-size: 25px;
+	}
+}
