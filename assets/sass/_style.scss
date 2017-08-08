@@ -63,3 +63,58 @@ hr{
 	margin-left: 10rem;
 }
 // fin seccion first filter//
+
+
+nav{
+	background-color: $background_color_nav;
+	.logo{
+	    width: 3%;
+	    margin-top: 1%;
+	    margin-left: 2%;
+	}
+}
+
+nav, nav a, nav ul a, span.badge.new{
+	color: $color_principal;
+}
+
+.mi-btn{
+	@include btn();
+}
+
+.inputs{
+	@include inputs();
+}
+
+input[type=text]:not(.browser-default){
+	border-bottom: none;
+}
+
+.titulo{
+	font-weight: 700;
+	color: $color_btn;
+}
+
+.reserva{
+	font-size: 38px;
+	font-weight: 100;
+	color: $color_principal;
+	a{
+		color: $color_principal
+	}
+}
+
+.titulos-footer{
+    font-size: 14px;
+    font-weight: 600;
+    color: $color_principal;
+}
+
+.elementos-footer{
+	padding-right: 2%;
+	font-size: 13px;
+}
+
+.footer{
+	border-top: 1px solid #9e9e9e;
+}
