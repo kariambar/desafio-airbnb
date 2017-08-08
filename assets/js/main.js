@@ -1,4 +1,20 @@
-$(document).ready(function(){
+
+//js first-filter//
+    $(document).ready(function(){
+var slider = document.getElementById('test-slider');
+
+noUiSlider.create(slider, {
+  start: [20, 80],
+  connect: true,
+  orientation: 'horizontal', // 'horizontal' or 'vertical'
+  range: {
+    'min': 0,
+    'max': 100
+  }
+});
+        
+
+// fin js first-filter//
     $('.datepicker').pickadate({
         selectMonths: true, // Creates a dropdown to control month
         selectYears: 15, // Creates a dropdown of 15 years to control year,
@@ -14,7 +30,8 @@ $(document).ready(function(){
         console.log(e);
     });
 
-})
+ });
+
 
     /*$('input.autocomplete').autocomplete({
         data: {
