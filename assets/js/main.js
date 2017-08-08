@@ -1,92 +1,30 @@
-console.log("funciona main.js");
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-});
-
-/*cambia saludo al hacer hover*/
 $(document).ready(function(){
-/*nav - cambio de opacidad*/
-	$(window).scroll(function(){
-		scroll = $(window).scrollTop();
-		if(scroll > 200){
-			$("#estiloNav").css({"background-color": "#f7f7f7"});
-		}else{
-			$("#estiloNav").css({"background-color": "transparent",
-				"border-color":"transparent"});
-		}
-	});
+    $('.datepicker').pickadate({
+        selectMonths: true, // Creates a dropdown to control month
+        selectYears: 15, // Creates a dropdown of 15 years to control year,
+        today: 'Today',
+        clear: 'Clear',
+        close: 'Ok',
+        closeOnSelect: false // Close upon selecting a date,
+    });
+    $('select').material_select();
 
-/*HOME*/	
-	/*welcome*/
-	$('#welcome').hover(
-	    function() {
-	        var $this = $(this);
-	        $this.data('Bienvenid@', $this.text());
-	        $this.text("Welcome");
-	    },
-	    function() {
-	        var $this = $(this);
-	        $this.text($this.data('Benvenid@'));
-	    }
-	);
-	/*iAm*/
-	$('#iAm').hover(
-	    function() {
-	        var $this = $(this);
-	        $this.data('Soy Vanessa', $this.text());
-	        $this.text("I am Vann");
-	    },
-	    function() {
-	        var $this = $(this);
-	        $this.text($this.data('Soy Vanessa'));
-	    }
-	);
-	/*Diseño*/
-	$('#designer').hover(
-	    function() {
-	        var $this = $(this);
-	        $this.data('Diseñadora y', $this.text());
-	        $this.text("Designer &");
-	    },
-	    function() {
-	        var $this = $(this);
-	        $this.text($this.data('Diseñadora y'));
-	    }
-	);
-	/*web dev*/
-	$('#webDev').hover(
-	    function() {
-	        var $this = $(this);
-	        $this.data('Desarrolladora Web', $this.text());
-	        $this.text("Web Developer");
-	    },
-	    function() {
-	        var $this = $(this);
-	        $this.text($this.data('Desarrolladora Web'));
-	    }
-	);
-	/*Animals*/
-	$('#loveAnimals').hover(
-	    function() {
-	        var $this = $(this);
-	        $this.data('Amante de los animales', $this.text());
-	        $this.text("I love animals");
-	    },
-	    function() {
-	        var $this = $(this);
-	        $this.text($this.data('Amante de los animales'));
-	    }
-	);
-		/*movies*/
-	$('#loveMovies').hover(
-	    function() {
-	        var $this = $(this);
-	        $this.data('Los videojuegos y ver películas.', $this.text());
-	        $this.text("Video Games and Watch Movies :)");
-	    },
-	    function() {
-	        var $this = $(this);
-	        $this.text($this.data('Los videojuegos y ver películas.'));
-	    }
-	);
-});
+    data.search_results.forEach(function(e){
+        $('.elemento').append('<div class="col s2 m2 l4 xl4"><img class="responsive-img" src="'+ e.listing.thumbnail_url +'"><h6>'+ e.listing.localized_city + ' - ' + e.listing.name + '</h6><p>' + e.listing.bedrooms + '</p></div>')
+        console.log(e);
+    });
+
+})
+
+    /*$('input.autocomplete').autocomplete({
+        data: {
+            "Apple": null,
+            "Microsoft": null,
+            "Google": 'https://placehold.it/250x250'
+        },
+        limit: 20, // The max amount of results that can be shown at once. Default: Infinity.
+        onAutocomplete: function(val) {
+          // Callback function when value is autcompleted.
+      },
+        minLength: 1, // The minimum length of the input for the autocomplete to start. Default: 1.
+    });*/
