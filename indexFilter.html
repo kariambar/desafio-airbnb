@@ -15,7 +15,7 @@
 	<!-- Mi css -->
 	<link rel="stylesheet" href="dist/css/style.min.css">
 </head>
-
+<body>
 <!-- Inicio seccion resultado first-filter-->
    <section class="nav-search">
    	<div class="container-fluid">
@@ -150,14 +150,84 @@
             </div>    
         </div>
    		</div>
+   		<!-- MAPA -->
    		<div class="col l5 m5 s12">
-   				<p>AQUI VA EL  MAPA</p>
+   			<div class="cajaMap">
+	   			<div id="findhotels">
+	      			Find hotels in:
+	   			 </div>
+			    <div id="locationField">
+			      <input id="autocomplete" placeholder="Enter a city" type="text" />
+			    </div>
+				<div id="controls">
+	      			<select id="country">
+				        <option value="all">All</option>
+				        <option value="au">Australia</option>
+				        <option value="br">Brazil</option>
+				        <option value="ca">Canada</option>
+				        <option value="fr">France</option>
+				        <option value="de">Germany</option>
+				        <option value="mx">Mexico</option>
+				        <option value="nz">New Zealand</option>
+				        <option value="it">Italy</option>
+				        <option value="za">South Africa</option>
+				        <option value="es">Spain</option>
+				        <option value="pt">Portugal</option>
+				        <option value="us" selected>U.S.A.</option>
+				        <option value="uk">United Kingdom</option>
+	      			</select>
+	    		</div>
+	    		<div id="map"></div>
+	    		<div id="listing">
+			      	<table id="resultsTable">
+			        	<tbody id="results"></tbody>
+			      	</table>
+			    </div>
+	    		<div style="display: none">
+			      	<div id="info-content">
+				        <table>
+				          <tr id="iw-url-row" class="iw_table_row">
+				            <td id="iw-icon" class="iw_table_icon"></td>
+				            <td id="iw-url"></td>
+				          </tr>
+				          <tr id="iw-address-row" class="iw_table_row">
+				            <td class="iw_attribute_name">Address:</td>
+				            <td id="iw-address"></td>
+				          </tr>
+				          <tr id="iw-phone-row" class="iw_table_row">
+				            <td class="iw_attribute_name">Telephone:</td>
+				            <td id="iw-phone"></td>
+				          </tr>
+				          <tr id="iw-rating-row" class="iw_table_row">
+				            <td class="iw_attribute_name">Rating:</td>
+				            <td id="iw-rating"></td>
+				          </tr>
+				          <tr id="iw-website-row" class="iw_table_row">
+				            <td class="iw_attribute_name">Website:</td>
+				            <td id="iw-website"></td>
+				          </tr>
+				        </table>
+		      		</div>
+	      		</div>
+    		</div>
    		</div>
-   		</div>
-   	</div>
-   </section>
+   	</section>
 <!-- final seccion resultado first-filter-->
-<body>
+	<footer>
+		<small> 1 - 18 de Más de 300 alquileres</small>
+		<ul>
+			<li><a href="">1</a></li>
+			<li><a href="">2</a></li>
+			<li><a href="">3</a></li>
+			<li>...</li>
+			<li><a href="">17</a></li>
+			<li><a href=""> <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+		</ul>
+		<hr>
+		<small>Estados Unidos > California > San Francisco</small>
+	</footer>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoOdFCBzBFoPBNpuhAYVcBjDGVN4ibgSg&libraries=places&callback=initMap" async defer></script>
 	<script src='dist/js/script.js'></script>
+	<!-- <script src='assets/map.js'></script> -->
 </body>
 </html>
