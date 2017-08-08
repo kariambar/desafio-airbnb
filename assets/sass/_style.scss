@@ -29,3 +29,120 @@
 		font-size: 25px;
 	}
 }
+
+
+// inicio seccion first filter//
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	color:#9e9e9e;
+}
+
+nav {
+	background-color:#fafafa;
+	ul a{
+		color:#000;
+	}
+}
+.brand-logo{
+	img{
+		width:100px;
+	}
+}
+
+hr{
+	border: 1px solid #eee;
+}
+
+.filter{
+	.waves-effect{
+		background-color:#fafafa;
+		color:#000;
+	}
+}
+
+	.box{
+    background-color: #eee;
+    border-top: 1px solid #ccc;
+    border-left:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    border-right:1px solid #ccc;
+    border-radius: 4px;
+    height:50px;
+  }
+
+.first-filter{
+	padding-top:20px;
+	.tipoHabitacion{
+	padding-top:20px;
+	.rangoPrecio{
+	padding-top:20px;
+}
+  }
+}
+
+ [type=checkbox]+label{
+	font-size:12px;
+}
+
+.nav-busqueda{
+	width:40%;
+	margin-right:30rem;
+	margin-left: 10rem;
+}
+// fin seccion first filter//
+
+
+nav{
+	background-color: $background_color_nav;
+	.logo{
+	    width: 3%;
+	    margin-top: 1%;
+	    margin-left: 2%;
+	}
+}
+
+nav, nav a, nav ul a, span.badge.new{
+	color: $color_principal;
+}
+
+.mi-btn{
+	@include btn();
+}
+
+.inputs{
+	@include inputs();
+}
+
+input[type=text]:not(.browser-default){
+	border-bottom: none;
+}
+
+.titulo{
+	font-weight: 700;
+	color: $color_btn;
+}
+
+.reserva{
+	font-size: 38px;
+	font-weight: 100;
+	color: $color_principal;
+	a{
+		color: $color_principal
+	}
+}
+
+.titulos-footer{
+    font-size: 14px;
+    font-weight: 600;
+    color: $color_principal;
+}
+
+.elementos-footer{
+	padding-right: 2%;
+	font-size: 13px;
+}
+
+.footer{
+	border-top: 1px solid #9e9e9e;
+}
