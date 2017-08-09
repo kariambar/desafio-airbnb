@@ -31,6 +31,16 @@ Airbnb - Desafío pre Hackathon Laboratoria - Autores : Maribel Díaz, Joselin G
 -------------------------------------------------------------------
 **Para este proyecto la pauta fue la siguiente:
 -------------------------------------------------------------------
+* 1. Reproducir la web de Airbnb : Mercado Comunitario basado en la confianza en el que la gente publica, descubre y reserva  alojamientos únicos en todo el mundo.
+* 2. Funcionalidades : - Insertar lugar de destino, fecha inicio, fecha termino y cantidad de huéspedes.
+                       - Slider con experiencias.
+                       - Mantener datos traidos desde la primera busqueda a nuevos filtros.
+                       - Mostrar mapa sector donde nos dirijimos y mostrar rango de precios.
+                       - Hacer click en botón filtro y desplegar una nueva seccion con nuevos filtros.
+                       - Mostrar resultados según rango de precios definidos.
+* 3. Requerimientos técnicos : - Usar Saas como procesador de CSS.
+                               - Usar Gulp y crear tareas.
+                               - Usar Npm.
 
 --------------------------------------------------------------------
 **BUGS - Los siguientes se corregirán en las próximas versiones
