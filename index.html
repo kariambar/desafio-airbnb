@@ -21,7 +21,7 @@
 <!-- comienza el index home -->
 	<nav>
 	    <div class="nav-wrapper">
-	      	<img class="img-responsive logo" src="dist/img/airbnbLogo.png">
+	      	<a href="#!" class="brand-logo"><img class="responsive-img" src="dist/img/airbnbLogo.png"></a>
 	      	<ul id="nav-mobile" class="right hide-on-med-and-down">
 		        <li><a href="#">Conviértete en anfitrión</a></li>
 		        <li><a href="#">Ayuda</a></li>
@@ -42,13 +42,13 @@
 		<div class="row">
 			<div class="col s12 m12 l4 xl4 inputs">
 			    <div class="input-field col s12">
-			        <input type="text" id="autocomplete-input" class="autocomplete">
+			        <input type="text" id="infoInput" class="autocomplete" required>
 			        <label for="autocomplete-input">Dónde</label>
 			    </div>
 			</div>
 			<div class="col s12 m12 l4 xl4 inputs">
 			    <div class="input-field col s12">
-					<input placeholder="Cuándo" type="text" class="datepicker">
+					<input placeholder="Cuándo" type="text" class="datepicker" required>
 				</div>
 			</div>
 			<div class="col s12 m12 l4 xl4 inputs">
@@ -62,8 +62,9 @@
 					<label>Huésped</label>
 				</div>
 				<div class="col s6 m6 l6 xl6">
-					<a class="waves-effect waves-light btn mi-btn">Buscar</a>
+					<a class="waves-effect waves-light btn mi-btn" id="submit">Buscar</a>
 				</div>
+				<div id="error"></div>
 			</div>
 		</div>	
 
@@ -104,7 +105,7 @@
 						</div>
 					</div>
 
-					<div class="col s12 m6 l8 xl8 offset-m2">
+					<div class="col s12 m6 l8 xl8">
 						<div class="col s12 m12 l4 xl4">
 		                	<h5 class="titulos-footer">Airbnb</h5>
 		                	<ul>
