@@ -7,7 +7,6 @@ Airbnb - Desafío pre Hackathon Laboratoria - Autores : Maribel Díaz, Joselin G
   1. Gulp : Task Runner basado en Node.js y npm, para automatizar tareas repetitivas, en este caso pemitió la correcta compilación,
   concatenación, minificación y optimización del código, a través de sus diferentes utilidades.
   2. Sass : Metalenguaje anidado de hojas de estilos que permite crear variables, mixin, nesting (anidamiento) y herencia de los selectores.
-  3. 
  **versiones instaladas:
  ------------------------
    - "gulp": "^3.9.1",
