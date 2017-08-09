@@ -168,7 +168,7 @@ body{
 		      #map {
 		        width: 440px;
 		      }
-		      #listing {
+/* 		      #listing {
 		        position: absolute;
 		        width: 200px;
 		        height: 470px;
@@ -177,8 +177,8 @@ body{
 		        top: 0px;
 		        cursor: pointer;
 		        overflow-x: hidden;
-		      }
-		      #findhotels {
+		      } */
+/* 		      #findhotels {
 		        position: absolute;
 		        text-align: right;
 		        width: 100px;
@@ -186,23 +186,23 @@ body{
 		        padding: 4px;
 		        z-index: 5;
 		        background-color: #fff;
-		      }
+		      } */
 		      #locationField {
 		        position: absolute;
 		        width: 190px;
 		        height: 25px;
-		        left: 108px;
-		        top: 0px;
+    			top: 102px;
 		        z-index: 5;
 		        background-color: #fff;
 		      }
 		      #controls {
 		        position: absolute;
-		        left: 300px;
-		        width: 140px;
-		        top: 0px;
-		        z-index: 5;
-		        background-color: #fff;
+			    /* left: 300px; */
+			    width: 140px;
+			    top: 102px;
+			    z-index: 5;
+			    background-color: #fff;
+			    right: 192px;
 		      }
 		      #autocomplete {
 		        width: 100%;
@@ -219,11 +219,11 @@ body{
 		        width: 24px;
 		        height: 24px;
 		      }
-		      #resultsTable {
+/* 		      #resultsTable {
 		        border-collapse: collapse;
 		        width: 240px;
-		      }
-		      #rating {
+		      } */
+/* 		      #rating {
 		        font-size: 13px;
 		        font-family: Arial Unicode MS;
 		      }
@@ -236,7 +236,18 @@ body{
 		      }
 		      .iw_table_icon {
 		        text-align: right;
-		      }
+		      } */
+		}
+	}
+	footer{
+		ul{
+			position:relative;
+			display: inline-flex;
+			li{
+				a{
+					padding-left: 80%;
+				}
+			}
 		}
 	}
 }
