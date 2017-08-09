@@ -45,3 +45,8 @@ noUiSlider.create(slider, {
       },
         minLength: 1, // The minimum length of the input for the autocomplete to start. Default: 1.
     });*/
+ $(document).ready(function() {
+        $('#showmenu').click(function() {
+                $('.menu').slideToggle("fast");
+        });
+    });
