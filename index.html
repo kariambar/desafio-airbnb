@@ -62,7 +62,187 @@
 					<label>Huésped</label>
 				</div>
 				<div class="col s6 m6 l6 xl6">
-					<a class="waves-effect waves-light btn mi-btn" id="submit">Buscar</a>
+					<a class="waves-effect waves-light btn"  id="showmenu">Filtros</a>
+            <!--Advanced Filter -->
+  <section class="advanced menu-filter" style="display: none;">
+    <div class="container advan-one">
+      <div class="row">
+        <div class="col s7 push-s5"><span class="flow-text text-14">Solo hay 14% de alojamiento en estas fechas<br>Te recomendamos que reserves un alojamiento lo antes posible</span></div>
+            <div class="col s5 pull-s7"><span class="flow-text"></span></div>
+      </div>
+      <div class="divider"></div>
+      <div class="section">
+        <div class="row">
+          <div class="col s3 m3 l3 xl3">
+              <h5>Tamaño</h5>
+            </div>
+            <div class="col s3 m3 l3 xl3">
+            <select class="browser-default">
+              <option value="" disabled selected>Habitaciones</option>
+              <option value="1">1+</option>
+              <option value="2">2+</option>
+              <option value="3">3+</option>
+              <option value="4">4+</option>
+            </select>
+            </div>
+            <div class="col s3 m3 l3 xl3">
+              <select class="browser-default">
+              <option value="" disabled selected>Baños</option>
+              <option value="1">1+</option>
+              <option value="2">2+</option>
+              <option value="3">3+</option>
+              <option value="4">4+</option>
+            </select>
+            </div>
+            <div class="col s3 m3 l3 xl3">
+              <select class="browser-default">
+              <option value="" disabled selected>Camas</option>
+              <option value="1">1+</option>
+              <option value="2">2+</option>
+              <option value="3">3+</option>
+              <option value="4">4+</option>
+            </select>
+            </div>
+        </div>
+        <div class="divider"></div>
+          <div class="section">
+            <div class="row">
+              <div class="col s3 m3 l3 xl3">
+                <h5>Opciones</h5>
+            </div>
+            <div class="col s3 m3 l3 xl3">
+                <p>
+                  <input type="checkbox" id="check1" />
+                  <label for="check1">Quedate en casa de anfitriones Exepcionales</label>
+                </p>
+            </div>
+          </div>
+        </div>  
+        <div class="divider"></div>
+          <div class="section">
+            <div class="row">
+              <div class="col s3 m3 l3 xl3">
+              <h5>Servicios</h5>
+              </div>
+              <div class="col s3 m3 l3 xl3">
+              <p>
+               <input type="checkbox" id="check2" />
+                <label for="check2">Internet Inalambrico</label>
+            </p>
+              </div>
+              <div class="col s3 m3 l3 xl3">
+              <p>
+               <input type="checkbox" id="chek3" />
+                <label for="chek3">TV</label>
+            </p>
+              </div>
+              <div class="col s3 m3 l3 xl3">
+              <p>
+               <input type="checkbox" id="chek4" />
+                <label for="chek4">Cocina</label>
+                <i class="large material-icons icons-arrow">arrow_drop_down</i> 
+
+            </p>
+              </div>
+            </div>
+         </div>
+         <div class="divider"></div>
+            <div class="section">
+            <div class="row">
+              <div class="col s3 m3 l3 xl3">
+              <h5>Servicios</h5>
+              </div>
+              <div class="col s3 m3 l3 xl3">
+              <p>
+               <input type="checkbox" id="chek5" />
+                <label for="chek5">Edificio con Ascensor</label>
+            </p>
+              </div>
+              <div class="col s3 m3 l3 xl3">
+              <p>
+               <input type="checkbox" id="chek6" />
+                <label for="chek6">Gimnasio</label>
+            </p>
+              </div>
+              <div class="col s3 m3 l3 xl3">
+              <p>
+               <input type="checkbox" id="chek7" />
+                <label for="chek7">Parking gratuito<br> Incluido</label>
+                <i class="large material-icons icons-arrow">arrow_drop_down</i>
+            </p>
+              </div>
+            </div>
+         </div>
+         <div class="divider"></div>
+            <div class="section">
+            <div class="row">
+              <div class="col s3 m3 l3 xl3">
+              <h5>Normas de la <br>casa</h5>
+              </div>
+              <div class="col s3 m3 l3 xl3">
+              <p>
+               <input type="checkbox" id="chek8" />
+                <label for="chek8">Admite Mascotas</label>
+            </p>
+              </div>
+              <div class="col s3 m3 l3 xl3">
+              <p>
+               <input type="checkbox" id="chek9"/>
+                <label for="chek9">Apto para eventos</label>
+            </p>
+              </div>
+              <div class="col s3 m3 l3 xl3">
+              <p>
+               <input type="checkbox" id="chek10" />
+                <label for="chek10">Apto para<br> Fumadores</label>
+            </p>
+              </div>
+            </div>
+         </div>
+          <div class="divider"></div>
+            <div class="section">
+            <div class="row">
+              <div class="col s3 m3 l3 xl3">
+              <h5>Vecindarios</h5>
+              </div>
+              <div class="col s3 m3 l3 xl3">
+              <p>
+               <input type="checkbox" id="chek11" />
+                <label for="chek11">SoMa</label>
+            </p>
+              </div>
+              <div class="col s3 m3 l3 xl3">
+              <p>
+               <input type="checkbox" id="chek12"/>
+                <label for="chek12">Mission Distric</label>
+            </p>
+              </div>
+              <div class="col s3 m3 l3 xl3">
+              <p>
+               <input type="checkbox" id="chek13" />
+                <label for="chek13">Daly City</label>
+                <i class="large material-icons icons-arrow">arrow_drop_down</i>
+            </p>
+              </div>
+            </div>
+         </div>
+         <div class="section">
+            <div class="row">
+              <div class="col s3 m3 l3 xl3">
+              <h5></h5>
+              </div>
+              <div class="col s3 m3 l3 xl3">
+              </div>
+              <div class="col s3 m3 l3 xl3">
+              <a class="waves-effect waves-light btn btn-filtros">Cancelar</a>
+              </div>
+              <div class="col s3 m3 l3 xl3">
+              <a class="waves-effect waves-light btn btn-aplicar" href="index.html">Aplicar Filtros</a>
+              </div>
+            </div>
+         </div>
+    </div>
+  </section>
 				</div>
 				<div id="error"></div>
 			</div>

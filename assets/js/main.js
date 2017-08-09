@@ -14,6 +14,9 @@ $(document).ready(function(){
   data.search_results.forEach(function(e){
     $('.elemento').append('<div class="col s2 m2 l4 xl4"><img class="responsive-img" src="'+ e.listing.thumbnail_url +'"><h6>'+ e.listing.localized_city + ' - ' + e.listing.name + '</h6><p>' + e.listing.bedrooms + '</p></div>');
     });
+    $('#showmenu').click(function() {
+      $('.menu').slideToggle("fast");
+     });
  });
  /*$('input.autocomplete').autocomplete({
         data: {
@@ -27,8 +30,3 @@ $(document).ready(function(){
       },
         minLength: 1, // The minimum length of the input for the autocomplete to start. Default: 1.
     });*/
- $(document).ready(function() {
-        $('#showmenu').click(function() {
-                $('.menu').slideToggle("fast");
-        });
-    });
