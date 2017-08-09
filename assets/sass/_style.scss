@@ -40,6 +40,17 @@ body{
 
 nav {
 	background-color:#fafafa;
+	.ciudades{
+		position:relative;
+		left: 150px;
+		#cajaCiudad{
+			p{
+				position: relative;
+			    top: -80px;
+				left: 40px;
+			}
+		}
+	}
 	ul a{
 		color:#000;
 	}
@@ -239,7 +250,7 @@ body{
 		      } */
 		}
 	}
-	footer{
+	#footerFilter{
 		ul{
 			position:relative;
 			display: inline-flex;

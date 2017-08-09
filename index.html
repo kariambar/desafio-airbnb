@@ -42,13 +42,13 @@
 		<div class="row">
 			<div class="col s12 m12 l4 xl4 inputs">
 			    <div class="input-field col s12">
-			        <input type="text" id="autocomplete-input infoInput" class="autocomplete">
+			        <input type="text" id="infoInput" class="autocomplete" required>
 			        <label for="autocomplete-input">Dónde</label>
 			    </div>
 			</div>
 			<div class="col s12 m12 l4 xl4 inputs">
 			    <div class="input-field col s12">
-					<input placeholder="Cuándo" type="text" class="datepicker">
+					<input placeholder="Cuándo" type="text" class="datepicker" required>
 				</div>
 			</div>
 			<div class="col s12 m12 l4 xl4 inputs">
@@ -62,8 +62,9 @@
 					<label>Huésped</label>
 				</div>
 				<div class="col s6 m6 l6 xl6">
-					<a class="waves-effect waves-light btn mi-btn" id="sumit">Buscar</a>
+					<a class="waves-effect waves-light btn mi-btn" id="submit">Buscar</a>
 				</div>
+				<div id="error"></div>
 			</div>
 		</div>	
 

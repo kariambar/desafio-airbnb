@@ -15,9 +15,7 @@ $(document).ready(function(){
     $('.elemento').append('<div class="col s2 m2 l4 xl4"><img class="responsive-img" src="'+ e.listing.thumbnail_url +'"><h6>'+ e.listing.localized_city + ' - ' + e.listing.name + '</h6><p>' + e.listing.bedrooms + '</p></div>');
     });
  });
-
-
-    /*$('input.autocomplete').autocomplete({
+ /*$('input.autocomplete').autocomplete({
         data: {
             "Apple": null,
             "Microsoft": null,

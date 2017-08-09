@@ -1,18 +1,16 @@
 $(document).ready(function(){
-  //show items saved in local storage
-/*  $("#infoInput").html(localStorage.getItem("ciudad"));
-
-$(document).ready(function(){
-  $("#caja-imprimir").html(localStorage.getItem("emailLocal"));*/
-  //$("#email-box").append('<p>'+localStorage.getItem("localEmail")+'<p>');
+  //$("#cajaCiudad").html(localStorage.getItem("ciudad"));
+  $("#cajaCiudad").append('<p>'+localStorage.getItem("ciudad")+'</p>');
   /*var mostrarEmail = function(){
     //show items saved in local storage
       return $("#email").value(localStorage.getItem("localEmail"));
-  }
+  };
   console.log(mostrarEmail);*/
 
 $("#submit").click(function(e){
-    //console.log("welcome to the menu");
+  /*infoInput = $("#infoInput").val();  */
+  //console.log(infoInput);
+  //console.log("welcome to the menu");
     //console.log(isPass() + " FALSE = NO ES UN NUMERO, TRUE = EUREKA");
     var error = "";
     var vacio = "";
@@ -35,5 +33,5 @@ $("#submit").click(function(e){
       localStorage.setItem("ciudad", $("#infoInput").val());
     }
   });
-  //console.log(localStorage)
+  console.log(localStorage)
 });
