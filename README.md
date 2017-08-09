@@ -21,12 +21,12 @@ Airbnb - Desafío pre Hackathon Laboratoria - Autores : Maribel Díaz, Joselin G
 -------------------------------------------------------------------
   1. Jquery: Biblioteca multiplataforma de javascript, que permite simplificar la interacción con los documentos HTML al manipular DOM y
   manejar eventos.
-  2. Bootstrap: conjunto de herramientas para el diseño de sitios, contiene plantillas de botones, cuadros y menús de navegación.
+  2. Materialize: conjunto de herramientas para el diseño de sitios, contiene plantillas de botones, cuadros y menús de navegación.
   3. noUiSlider: control deslizante de rango.
   
 **versiones instaladas:
 -------------------------
-- "bootstrap": "^3.3.7",
+- "materialize-css": "^0.100.1",
 -  "jquery": "^3.2.1",
 -------------------------------------------------------------------
 **Para este proyecto la pauta fue la siguiente:
